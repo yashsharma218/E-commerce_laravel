@@ -17,11 +17,21 @@ class ProductSeeder extends Seeder
     {
         //
         DB::table('products')->insert([
-            "name"=>"LG Mobile",
+            [
+            "name"=>"LG Mobile2",
             "price"=>"10000",
-            "description"=>"This is LG Description",
+            "description"=>"This is LG2 Description",
             "category"=>"Mobile",
-            "gallery"=>"https://www.google.com/search?q=lg+mobile+images&rlz=1C1GCEA_en&sxsrf=APq-WBui0Q4eMRvKta3638zXf0jVNyD8CQ:1645223390677&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjw2Jvepor2AhX663MBHdURBkcQ_AUoAnoECAIQBA&biw=1366&bih=617&dpr=1#imgrc=TaeJp9aKlAiHgM"
+            "gallery"=>"https://www.lg.com/in/images/mobile-phones/md07523361/thumbnail/LMK610IM-350-3.jpg",
+        ],
+        [
+            "name"=>"Computer2",
+            "price"=>"100000",
+            "description"=>"This is Computer2 Description",
+            "category"=>"PC",
+            "gallery"=>"https://cdn.mos.cms.futurecdn.net/mZWTSqsHwPqLJ4WCez9mSm.jpg"
+        ]
+    
         ]);
     }
 }

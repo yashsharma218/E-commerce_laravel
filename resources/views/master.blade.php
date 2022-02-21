@@ -35,8 +35,37 @@
 
 <style>
     .custom-login {
-        height: 450px;
+        height: 500px;
         padding-top: 100px;
+    }
+    .img {
+        height: 550px !important;
+        width: 100%; 
+    }
+    .custom-product {
+        height: 500px;
+    }
+    .slider_text {
+        background-color: #24465454 !important;
+    }
+    .trending_img{
+        height: 80px;
+    }
+    .trending_item{
+        float: left;
+        width: 20%;
+    }
+    .trending_wrpper
+    {
+        margin: 30px;
+    }
+    .detail_img
+    {
+        height: 300px;
+    }
+    .search
+    {
+        width: 500px !important;
     }
 
 </style>
