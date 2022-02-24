@@ -14,10 +14,11 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// For Logout Route
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('/login');
+});
 
 //For login page View
 Route::view("/login","login");
@@ -36,3 +37,9 @@ Route::get('search',[ProductController::class,'search']);
 
 //For Add to Cart
 Route::post('/add_to_cart',[ProductController::class,'add_to_cart']);
+
+//For Cart list Page
+Route::get('/cartlist',[ProductController::class,'cartlist']);
+
+//For Remove Cart List Item
+Route::get('removecart/{id}',[ProductController::class,'removecart']);
