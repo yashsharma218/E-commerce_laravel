@@ -43,3 +43,12 @@ Route::get('/cartlist',[ProductController::class,'cartlist']);
 
 //For Remove Cart List Item
 Route::get('removecart/{id}',[ProductController::class,'removecart']);
+
+//For Order Our Product
+Route::get('ordernow',[ProductController::class,'ordernow']);
+
+//For Order Place
+Route::post('orderplace',[ProductController::class,'orderplace']);
+
+//For My order
+Route::get('order',[ProductController::class,'myorder']);

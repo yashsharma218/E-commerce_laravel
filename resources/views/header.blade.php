@@ -3,6 +3,7 @@ use App\Http\Controllers\ProductController;
 $total = 0;
 if (Session::has('user')) {
     $total = ProductController::cartcount();
+    $userid=Session::has('user');
 }
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +18,7 @@ if (Session::has('user')) {
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Orders</a>
+                <a class="nav-link" href="order">Orders</a>
             </li>
             <li class="nav-item" style="padding-left: 570px">
                 <form action="/search" class="form-inline my-2 my-lg-0">

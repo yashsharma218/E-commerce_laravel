@@ -73,6 +73,10 @@
         padding-bottom: 20px;
     }
 
+    .ordernow{
+        margin-left: 20px;
+    }
+
 </style>
 
 </html>
